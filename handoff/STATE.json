@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "project_id": "03",
-  "stage": "bot_m04_accepted",
+  "stage": "bot_m05_accepted",
   "owner": "Grok Bot (coordinator)",
   "repository": {
     "url": "https://github.com/Ilghar/persian-pronunciation-tts-evaluation",
     "branch": "main",
-    "commit": "M02 b2551fa4e66c07341054dc8a6b82f7449f8a2cad; M03 a4b0db7b88f390e0ba7c66630d6a9f715fb422f2; M04 in Drive MANIFEST_M04.json",
+    "commit": "M02 b2551fa4e66c07341054dc8a6b82f7449f8a2cad; M03 a4b0db7b88f390e0ba7c66630d6a9f715fb422f2; M04 f04d4fd0796e264b645760d4bc7f79616019a7b8; latest in Drive MANIFEST_M05_M06.json",
     "visibility": "private"
   },
   "drive_folder_url": "https://drive.google.com/drive/folders/1Jxk8p48VPn5Kfr2yCy61iwwEycFlfkfi",
@@ -64,13 +64,23 @@
     },
     {
       "id": "M05",
-      "status": "not_started",
-      "evidence": []
+      "status": "accepted",
+      "evidence": [
+        "src/persian_pronunciation_tts_evaluation/schema.py",
+        "data/collection_v1/DATASHEET.md",
+        "tests/receipts/m05_manifest.json",
+        "tests/receipts/m05_m06_run.json",
+        "src/persian_pronunciation_tts_evaluation/collection.py",
+        "data/collection_v1/targets.json",
+        "tests/test_m05.py"
+      ]
     },
     {
       "id": "M06",
-      "status": "not_started",
-      "evidence": []
+      "status": "blocked",
+      "evidence": [
+        "docs/M06_BLOCKER.md"
+      ]
     },
     {
       "id": "M07",
@@ -97,7 +107,7 @@
     {
       "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
       "scope": "behavioural, synthetic/mock fixtures",
-      "receipt": "tests/receipts/m04_run.json"
+      "receipt": "tests/receipts/m05_m06_run.json"
     },
     {
       "command": "python3 common/validate_state.py handoff/STATE.json --root .",
@@ -105,17 +115,17 @@
     }
   ],
   "next_actions": [
-    "Human/independent review of M01-M04",
-    "M05 per common/MILESTONES.json",
-    "Address review gaps in docs/REVIEW_M01_M03.md"
+    "User decision on real TTS baseline (docs/M06_BLOCKER.md)",
+    "Native review of targets.json",
+    "M07 after M06"
   ],
   "budget": {
-    "observed_remaining": "week1 2% used at 10:51 Berlin (user reading)",
+    "observed_remaining": "week1 3% used at 11:09 Berlin (user reading)",
     "pool_relationship": "unknown",
     "paid_spend_allowed": false
   },
-  "completion_fraction": 0.4,
-  "notes": "M01-M04 accepted by Bot (second-pass review, not independent human). M04 slice: Cleared FA01-FA12 -> phenomenon tags -> MOCK tone WAVs (not speech) + sha256 manifest -> blind packet -> mock ratings ingest -> scorer. Mock run excluded from baseline: NO empirical TTS baseline exists.",
+  "completion_fraction": 0.5,
+  "notes": "M01-M05 accepted by Bot review only (not independent). Representation draft (site/index.html, CASE_PAGE.md, architecture.svg) exists but M09 not claimed. No image generated.",
   "lease": {
     "status": "active",
     "released_at": null,

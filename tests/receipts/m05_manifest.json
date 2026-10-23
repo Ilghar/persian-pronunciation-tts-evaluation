@@ -1,0 +1,378 @@
+{
+ "audio_items": 0,
+ "collection": "persian-pronunciation-items",
+ "edge_cases_covered": [
+  "code_switching",
+  "ezafe_explicit",
+  "ezafe_implicit",
+  "formal_register_zwnj",
+  "informal_register",
+  "numerals_quantity",
+  "numerals_time",
+  "punctuation",
+  "question_intonation",
+  "semantic_homonym_same_pronunciation_control"
+ ],
+ "empirical_items": 0,
+ "errors": [],
+ "files": {
+  "data/collection_v1/targets.json": "7f418aee80ba0a31fefa8b9eab6b035a42820f6c6da11dae996a251ce843b0d2",
+  "inputs/starter_sentences.csv": "ab5b73d326e427a754c942eb9c9c59572a04c7e409b3f2190548302a6140c702"
+ },
+ "items": [
+  {
+   "dialect": null,
+   "id": "FA01",
+   "phenomena": [
+    "semantic_homonym_same_pronunciation_control"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "semantic_homonym_same_pronunciation_control",
+     "reference_pronunciation": null,
+     "span": [
+      0,
+      3
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "شیر را در یخچال بگذار.",
+   "text_raw": "شیر را در یخچال بگذار."
+  },
+  {
+   "dialect": null,
+   "id": "FA02",
+   "phenomena": [
+    "semantic_homonym_same_pronunciation_control"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "semantic_homonym_same_pronunciation_control",
+     "reference_pronunciation": null,
+     "span": [
+      0,
+      3
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "شیر در جنگل زندگی میکند.",
+   "text_raw": "شیر در جنگل زندگی می‌کند."
+  },
+  {
+   "dialect": null,
+   "id": "FA03",
+   "phenomena": [
+    "semantic_homonym_same_pronunciation_control"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "semantic_homonym_same_pronunciation_control",
+     "reference_pronunciation": null,
+     "span": [
+      6,
+      9
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "لطفاً شیر آب را ببند.",
+   "text_raw": "لطفاً شیر آب را ببند."
+  },
+  {
+   "dialect": null,
+   "id": "FA04",
+   "phenomena": [
+    "ezafe_explicit"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "ezafe_explicit",
+     "reference_pronunciation": null,
+     "span": [
+      0,
+      5
+     ],
+     "target_id": "t1"
+    },
+    {
+     "phenomenon": "ezafe_explicit",
+     "reference_pronunciation": null,
+     "span": [
+      6,
+      11
+     ],
+     "target_id": "t2"
+    }
+   ],
+   "text_normalized": "کتابِ دوستِ من روی میز است.",
+   "text_raw": "کتابِ دوستِ من روی میز است."
+  },
+  {
+   "dialect": null,
+   "id": "FA05",
+   "phenomena": [
+    "ezafe_implicit"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "ezafe_implicit",
+     "reference_pronunciation": null,
+     "span": [
+      0,
+      4
+     ],
+     "target_id": "t1"
+    },
+    {
+     "phenomenon": "ezafe_implicit",
+     "reference_pronunciation": null,
+     "span": [
+      5,
+      9
+     ],
+     "target_id": "t2"
+    }
+   ],
+   "text_normalized": "کتاب دوست من روی میز است.",
+   "text_raw": "کتاب دوست من روی میز است."
+  },
+  {
+   "dialect": null,
+   "id": "FA06",
+   "phenomena": [
+    "formal_register_zwnj"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "formal_register_zwnj",
+     "reference_pronunciation": null,
+     "span": [
+      16,
+      22
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "من فردا به خانه میروم.",
+   "text_raw": "من فردا به خانه می‌روم."
+  },
+  {
+   "dialect": null,
+   "id": "FA07",
+   "phenomena": [
+    "informal_register"
+   ],
+   "register": "informal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "informal_register",
+     "reference_pronunciation": null,
+     "span": [
+      8,
+      13
+     ],
+     "target_id": "t1"
+    },
+    {
+     "phenomenon": "informal_register",
+     "reference_pronunciation": null,
+     "span": [
+      14,
+      18
+     ],
+     "target_id": "t2"
+    }
+   ],
+   "text_normalized": "من فردا میرم خونه.",
+   "text_raw": "من فردا می‌رم خونه."
+  },
+  {
+   "dialect": null,
+   "id": "FA08",
+   "phenomena": [
+    "numerals_time"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "numerals_time",
+     "reference_pronunciation": null,
+     "span": [
+      10,
+      15
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "جلسه ساعت 14:30 شروع میشود.",
+   "text_raw": "جلسه ساعت ۱۴:۳۰ شروع می‌شود."
+  },
+  {
+   "dialect": null,
+   "id": "FA09",
+   "phenomena": [
+    "numerals_quantity"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "numerals_quantity",
+     "reference_pronunciation": null,
+     "span": [
+      14,
+      19
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "قیمت این کتاب 12500 تومان است.",
+   "text_raw": "قیمت این کتاب ۱۲۵۰۰ تومان است."
+  },
+  {
+   "dialect": null,
+   "id": "FA10",
+   "phenomena": [
+    "code_switching"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "code_switching",
+     "reference_pronunciation": null,
+     "span": [
+      0,
+      5
+     ],
+     "target_id": "t1"
+    },
+    {
+     "phenomenon": "code_switching",
+     "reference_pronunciation": null,
+     "span": [
+      11,
+      17
+     ],
+     "target_id": "t2"
+    }
+   ],
+   "text_normalized": "نسخهٔ جدید Python را نصب کردم.",
+   "text_raw": "نسخهٔ جدید Python را نصب کردم."
+  },
+  {
+   "dialect": null,
+   "id": "FA11",
+   "phenomena": [
+    "punctuation"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "test",
+   "targets": [
+    {
+     "phenomenon": "punctuation",
+     "reference_pronunciation": null,
+     "span": [
+      17,
+      18
+     ],
+     "target_id": "t1"
+    }
+   ],
+   "text_normalized": "این یک آزمایش است، نه نتیجهٔ ارزیابی.",
+   "text_raw": "این یک آزمایش است، نه نتیجهٔ ارزیابی."
+  },
+  {
+   "dialect": null,
+   "id": "FA12",
+   "phenomena": [
+    "question_intonation"
+   ],
+   "register": "formal",
+   "review_status": "needs_native_review",
+   "source_kind": "new_synthetic_text_not_benchmark",
+   "split": "dev",
+   "targets": [
+    {
+     "phenomenon": "question_intonation",
+     "reference_pronunciation": null,
+     "span": [
+      0,
+      3
+     ],
+     "target_id": "t1"
+    },
+    {
+     "phenomenon": "question_intonation",
+     "reference_pronunciation": null,
+     "span": [
+      22,
+      23
+     ],
+     "target_id": "t2"
+    }
+   ],
+   "text_normalized": "آیا فردا باران میبارد؟",
+   "text_raw": "آیا فردا باران می‌بارد؟"
+  }
+ ],
+ "normalized_duplicates": [],
+ "phenomena": {
+  "code_switching": 1,
+  "ezafe_explicit": 1,
+  "ezafe_implicit": 1,
+  "formal_register_zwnj": 1,
+  "informal_register": 1,
+  "numerals_quantity": 1,
+  "numerals_time": 1,
+  "punctuation": 1,
+  "question_intonation": 1,
+  "semantic_homonym_same_pronunciation_control": 3
+ },
+ "reference_pronunciations_present": 0,
+ "review": "needs_native_review for all items and spans",
+ "rights": "newly drafted text (Drive DATA_REVIEW); no audio, no real voices",
+ "splits": {
+  "dev": 11,
+  "test": 1
+ },
+ "version": "1.0.0"
+}

@@ -1,6 +1,6 @@
 # Persian pronunciation and expressive TTS evaluation
 
-**Status: work in progress (private). 4/10 milestones; stdlib vertical slice on cleared synthetic inputs — no measured model results.**
+**Status: work in progress (private). 5/10 milestones (Bot-reviewed); synthetic data only; TTS baseline blocked on user decision.**
 
 - Product contract: `docs/PRODUCT_CONTRACT.md`
 - Sources/evidence vs plans: `docs/SOURCES.md`
@@ -24,3 +24,9 @@ PYTHONPATH=src python3 -m persian_pronunciation_tts_evaluation slice inputs/star
 ```
 Cleared FA01-FA12 -> phenomenon tags -> MOCK tone WAVs (not speech) + sha256 manifest -> blind packet -> mock ratings ingest -> scorer. Mock run excluded from baseline: NO empirical TTS baseline exists.
 Review: `docs/REVIEW_M01_M03.md`.
+
+## Collection and results
+- Datasheet: `data/collection_v1/DATASHEET.md`
+- M06 blocker: `docs/M06_BLOCKER.md`
+- Case page: `docs/CASE_PAGE.md`; static page: `site/index.html` (`python3 tools/export_site.py`); diagram `docs/architecture.mmd` + `docs/architecture.svg`
+- Schema validation in code: `src/persian_pronunciation_tts_evaluation/schema.py` (stdlib subset)

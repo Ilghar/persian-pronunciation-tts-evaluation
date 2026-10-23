@@ -1,0 +1,253 @@
+{
+ "version": "1.0.0",
+ "note": "Spans proposed by Grok Bot; reference pronunciations deliberately null until native review. Character offsets are Python str indices (code points) into text_raw.",
+ "items": [
+  {
+   "item_id": "FA01",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      0,
+      3
+     ],
+     "surface": "شیر",
+     "phenomenon": "semantic_homonym_same_pronunciation_control",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA02",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      0,
+      3
+     ],
+     "surface": "شیر",
+     "phenomenon": "semantic_homonym_same_pronunciation_control",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA03",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      6,
+      9
+     ],
+     "surface": "شیر",
+     "phenomenon": "semantic_homonym_same_pronunciation_control",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA04",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      0,
+      5
+     ],
+     "surface": "کتابِ",
+     "phenomenon": "ezafe_explicit",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    },
+    {
+     "target_id": "t2",
+     "span": [
+      6,
+      11
+     ],
+     "surface": "دوستِ",
+     "phenomenon": "ezafe_explicit",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA05",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      0,
+      4
+     ],
+     "surface": "کتاب",
+     "phenomenon": "ezafe_implicit",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    },
+    {
+     "target_id": "t2",
+     "span": [
+      5,
+      9
+     ],
+     "surface": "دوست",
+     "phenomenon": "ezafe_implicit",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA06",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      16,
+      22
+     ],
+     "surface": "می‌روم",
+     "phenomenon": "formal_register_zwnj",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA07",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      8,
+      13
+     ],
+     "surface": "می‌رم",
+     "phenomenon": "informal_register",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    },
+    {
+     "target_id": "t2",
+     "span": [
+      14,
+      18
+     ],
+     "surface": "خونه",
+     "phenomenon": "informal_register",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA08",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      10,
+      15
+     ],
+     "surface": "۱۴:۳۰",
+     "phenomenon": "numerals_time",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA09",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      14,
+      19
+     ],
+     "surface": "۱۲۵۰۰",
+     "phenomenon": "numerals_quantity",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA10",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      0,
+      5
+     ],
+     "surface": "نسخهٔ",
+     "phenomenon": "code_switching",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    },
+    {
+     "target_id": "t2",
+     "span": [
+      11,
+      17
+     ],
+     "surface": "Python",
+     "phenomenon": "code_switching",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA11",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      17,
+      18
+     ],
+     "surface": "،",
+     "phenomenon": "punctuation",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  },
+  {
+   "item_id": "FA12",
+   "targets": [
+    {
+     "target_id": "t1",
+     "span": [
+      0,
+      3
+     ],
+     "surface": "آیا",
+     "phenomenon": "question_intonation",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    },
+    {
+     "target_id": "t2",
+     "span": [
+      22,
+      23
+     ],
+     "surface": "؟",
+     "phenomenon": "question_intonation",
+     "reference_pronunciation": null,
+     "review_status": "unreviewed_bot_proposed_span"
+    }
+   ]
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 # Next actions
 
-1. Independent (human or Expert) review of M01-M04; see docs/REVIEW_M01_M03.md gaps.
-2. M05 per common/MILESTONES.json.
-3. Native/expert review of fixtures before gold labels.
+1. User decision on real TTS baseline (docs/M06_BLOCKER.md)
+2. Native review of targets.json
+3. M07 after M06

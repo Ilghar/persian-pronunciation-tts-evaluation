@@ -2,8 +2,13 @@ import argparse, hashlib, json, pathlib, sys
 from .items import load_csv, assign_splits
 from .score import score
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog="persian_pronunciation_tts_evaluation"); ap.add_argument("cmd", choices=["score","slice"])
+    ap = argparse.ArgumentParser(prog="persian_pronunciation_tts_evaluation"); ap.add_argument("cmd", choices=["score","slice","collection"])
     ap.add_argument("items"); ap.add_argument("ratings", nargs="?"); ap.add_argument("--out", required=True); a = ap.parse_args(argv)
+    if a.cmd == "collection":
+        from .collection import build
+        m = build(a.items); o = pathlib.Path(a.out); o.mkdir(parents=True, exist_ok=True)
+        (o / "manifest.json").write_text(json.dumps(m, indent=1, sort_keys=True, ensure_ascii=False) + "\n")
+        print(json.dumps({k: m[k] for k in ("splits", "errors", "reference_pronunciations_present", "normalized_duplicates")})); return 1 if m["errors"] else 0
     items = load_csv(a.items)
     if a.cmd == "slice":
         import csv

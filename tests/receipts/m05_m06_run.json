@@ -1,0 +1,29 @@
+{
+ "utc_time": "2026-10-23T09:15:09+00:00",
+ "python": "3.13.5",
+ "environment": "fresh copy, stdlib only, no network",
+ "base_commit": "f04d4fd0796e264b645760d4bc7f79616019a7b8",
+ "runs": [
+  {
+   "name": "unittest",
+   "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+   "exit_code": 0,
+   "stdout": "",
+   "stderr": "test_collection_valid_spans_match_and_unreviewed (test_m05.Collection.test_collection_valid_spans_match_and_unreviewed) ... ok\ntest_item_schema_rejects_bad_records (test_m05.Collection.test_item_schema_rejects_bad_records) ... ok\ntest_span_mismatch_detected (test_m05.Collection.test_span_mismatch_detected) ... ok\ntest_normalized_duplicates_detected_and_split_stable (test_scoring.Items.test_normalized_duplicates_detected_and_split_stable) ... ok\ntest_raw_text_preserved_including_zwnj (test_scoring.Items.test_raw_text_preserved_including_zwnj) ... ok\ntest_mock_excluded_missing_not_evaluated (test_scoring.Scoring.test_mock_excluded_missing_not_evaluated) ... ok\ntest_project_json_valid_and_html_escapes (test_site.Site.test_project_json_valid_and_html_escapes) ... ok\ntest_svg_diagram_matches_project_architecture (test_site.Site.test_svg_diagram_matches_project_architecture) ... ok\ntest_blind_packet_hides_item_ids_and_is_deterministic (test_slice.Slice.test_blind_packet_hides_item_ids_and_is_deterministic) ... ok\ntest_end_to_end_mock_never_baseline (test_slice.Slice.test_end_to_end_mock_never_baseline) ... ok\ntest_tagging (test_slice.Slice.test_tagging) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.101s\n\nOK\n"
+  },
+  {
+   "name": "export_site",
+   "command": "PYTHONPATH=src python3 tools/export_site.py",
+   "exit_code": 0,
+   "stdout": "{\"valid\": true, \"wrote\": \"site/index.html\"}\n",
+   "stderr": ""
+  },
+  {
+   "name": "collection",
+   "command": "PYTHONPATH=src python3 -m persian_pronunciation_tts_evaluation collection . --out out/x",
+   "exit_code": 0,
+   "stdout": "{\"splits\": {\"dev\": 11, \"test\": 1}, \"errors\": [], \"reference_pronunciations_present\": 0, \"normalized_duplicates\": []}\n",
+   "stderr": ""
+  }
+ ]
+}
