@@ -1,5 +1,5 @@
 # Next actions
 
-1. User decision on real TTS baseline (docs/M06_BLOCKER.md)
-2. Native review of targets.json
-3. M07 after M06
+1. Native listener rates the 12 MOSS WAVs via blind packet
+2. Review targets.json spans
+3. Independent review; M08 packaging/CI

@@ -13,12 +13,49 @@
   "Blind human ratings + timing metadata",
   "Reproducible baseline and limitations"
  ],
- "results": [],
+ "results": [
+  {
+   "metric": "MOSS-TTS-Nano-100M generation success (CPU)",
+   "value": "12/12",
+   "denominator": 12,
+   "kind": "measured, real system output",
+   "caveat": "signal-level only; nobody has listened"
+  },
+  {
+   "metric": "bit-identical seeded reruns",
+   "value": "0/12",
+   "denominator": 12,
+   "kind": "measured",
+   "caveat": "upstream nondeterminism"
+  },
+  {
+   "metric": "items flagged clipping / mostly silent",
+   "value": "1/12 (FA09)",
+   "denominator": 12,
+   "kind": "measured",
+   "caveat": "not a pronunciation verdict"
+  },
+  {
+   "metric": "pronunciation error rate",
+   "value": "not measured",
+   "denominator": 0,
+   "kind": "not measured",
+   "caveat": "needs native ratings"
+  },
+  {
+   "metric": "adversarial scoring/ingest/audio suite",
+   "value": "21/21 after M07 fixes (10/21 before)",
+   "denominator": 21,
+   "kind": "measured robustness",
+   "caveat": "suite written by author"
+  }
+ ],
  "assets": [],
  "links": [],
  "limitations": [
   "No TTS model has been run; mock tone audio is not speech and is never a baseline.",
   "Reference pronunciations and spans are unreviewed.",
-  "12 items; deterministic split gives 11 dev / 1 test, too small for a test claim."
+  "12 items; deterministic split gives 11 dev / 1 test, too small for a test claim.",
+  "Illustration (assets/ASSETS.json) is AI-generated, illustration only, stored on Drive not git; the native diagram is authoritative."
  ]
 }

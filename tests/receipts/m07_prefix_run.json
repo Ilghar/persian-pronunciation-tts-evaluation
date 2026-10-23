@@ -1,0 +1,132 @@
+{
+ "n": 21,
+ "passed": 10,
+ "rows": [
+  {
+   "group": "score",
+   "name": "clean",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "score",
+   "name": "bool_intelligibility_rejected",
+   "exception": null,
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "unknown_verdict_rejected",
+   "exception": "KeyError: 'maybe'",
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "judgment_not_dict_no_crash",
+   "exception": "TypeError: string indices must be integers, not 'str'",
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "missing_run_kind_no_crash",
+   "exception": "KeyError: 'run_kind'",
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "duplicate_reviewer_rejected",
+   "exception": null,
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "two_reviewers_disagree_counted",
+   "exception": "KeyError: 'needs_adjudication'",
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "correct_vs_uncertain_adjudication",
+   "exception": "KeyError: 'needs_adjudication'",
+   "pass": false
+  },
+  {
+   "group": "score",
+   "name": "mock_never_baseline",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "ingest",
+   "name": "ingest_clean",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "ingest",
+   "name": "ingest_verdict_case_whitespace",
+   "exception": null,
+   "pass": false
+  },
+  {
+   "group": "ingest",
+   "name": "ingest_persian_digits",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "ingest",
+   "name": "ingest_missing_reviewer_column_no_crash",
+   "exception": "KeyError: 'reviewer_id'",
+   "pass": false
+  },
+  {
+   "group": "ingest",
+   "name": "ingest_unknown_blind_id_reported",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "audio",
+   "name": "pcm16_ok",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "audio",
+   "name": "float32_ok",
+   "exception": null,
+   "pass": true
+  },
+  {
+   "group": "audio",
+   "name": "pcm8_rejected",
+   "exception": "ValueError: unsupported format tag=1 bits=8",
+   "pass": true
+  },
+  {
+   "group": "audio",
+   "name": "truncated_rejected",
+   "exception": "error: unpack requires a buffer of 16 bytes",
+   "pass": false
+  },
+  {
+   "group": "audio",
+   "name": "not_wav_rejected",
+   "exception": "ValueError: not a RIFF/WAVE file",
+   "pass": true
+  },
+  {
+   "group": "audio",
+   "name": "empty_data_no_crash",
+   "exception": null,
+   "pass": false
+  },
+  {
+   "group": "audio",
+   "name": "float_over_full_scale_flagged",
+   "exception": null,
+   "pass": true
+  }
+ ]
+}

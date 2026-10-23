@@ -1,0 +1,160 @@
+{
+ "system": "MOSS-TTS-Nano-100M continuation mode (no voice prompt), CPU float32, seed 20261023",
+ "generated": "12/12",
+ "deterministic_rerun_identical": "0/12",
+ "per_item": {
+  "FA01": {
+   "sha256": "6f427f2d6998058304992c77c6872e9b65110869878a61a2c799fb8b53ee5841",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 2.0,
+   "rms_dbfs": -19.27,
+   "peak_abs": 0.4875,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.05
+  },
+  "FA02": {
+   "sha256": "9caec49e250dd2a992f479f11e720aa7c5380a0437c3ba5122034437feed3497",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 3.6,
+   "rms_dbfs": -22.87,
+   "peak_abs": 0.4957,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.278
+  },
+  "FA03": {
+   "sha256": "e9d49479bd0543c082272994b3f224ccbbb8b0187176475182727886541791dd",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 6.32,
+   "rms_dbfs": -21.78,
+   "peak_abs": 0.6018,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.43
+  },
+  "FA04": {
+   "sha256": "1fb4c09b9c636deb4b41f1eec31b2e8d9b90c51c24350711ec5be8db2084e8ea",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 4.4,
+   "rms_dbfs": -19.1,
+   "peak_abs": 0.8739,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.491
+  },
+  "FA05": {
+   "sha256": "8cb57d555d33d2205fa24670f19da395a0af832b82a0fc9b6f6bf8855e4fab4a",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 2.24,
+   "rms_dbfs": -19.06,
+   "peak_abs": 0.711,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.214
+  },
+  "FA06": {
+   "sha256": "193641b18c44d6ebc309bdf5828f5381bc521b158a8021cc7341ed63646641a8",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 3.6,
+   "rms_dbfs": -15.77,
+   "peak_abs": 0.7874,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.022
+  },
+  "FA07": {
+   "sha256": "494c06fbcd962cf4eb4dccdc38d2ede9ab972f5193dd879a97942045bd169759",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 3.04,
+   "rms_dbfs": -18.25,
+   "peak_abs": 0.8229,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.336
+  },
+  "FA08": {
+   "sha256": "f0653b8bbb1fdc67c8b5e55a925f6cdb7397f0bae0b74911356687f1d8680ef5",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 3.6,
+   "rms_dbfs": -17.83,
+   "peak_abs": 0.9614,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.383
+  },
+  "FA09": {
+   "sha256": "edd622dc173b974f04577316753fa2594d4947a047f1b420d1d2f21a62535bc0",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 6.88,
+   "rms_dbfs": -21.38,
+   "peak_abs": 1.0265,
+   "clipped_samples": 4,
+   "silent_frame_fraction": 0.692
+  },
+  "FA10": {
+   "sha256": "b40f17dfdb89b3793bcaf0a7c26fba84132ef646569f7f13e2fc96c6992400bb",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 3.2,
+   "rms_dbfs": -22.23,
+   "peak_abs": 0.7351,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.256
+  },
+  "FA11": {
+   "sha256": "574dd736e88680e051c2ae8a5eb4dd95d24ba5d3adcf9417e324da0149b553dc",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 5.52,
+   "rms_dbfs": -22.87,
+   "peak_abs": 0.6563,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.453
+  },
+  "FA12": {
+   "sha256": "ca546b9d9d4b5955f6cecbf61080e6012c63e40388d21856567a7a7aa0ff3c19",
+   "sample_rate": 48000,
+   "channels": 2,
+   "duration_s": 1.76,
+   "rms_dbfs": -20.62,
+   "peak_abs": 0.5549,
+   "clipped_samples": 0,
+   "silent_frame_fraction": 0.227
+  }
+ },
+ "summary": {
+  "n": 12,
+  "duration_s_min": 1.76,
+  "duration_s_median": 3.6,
+  "duration_s_max": 6.88,
+  "s_per_char_min": 0.088,
+  "s_per_char_max": 0.3718,
+  "items_with_clipping": 1,
+  "items_silent_fraction_gt_0_5": 1
+ },
+ "not_measured": [
+  "pronunciation correctness (needs native listener; reference_pronunciation is null)",
+  "intelligibility/ASR",
+  "naturalness/MOS"
+ ],
+ "audio_committed": false,
+ "audio_note": "WAVs kept off-repo on the box (~9 MB); sha256 per item recorded for verification.",
+ "wall_clock_s_per_item_including_model_load": {
+  "n": 12,
+  "min": 4.1,
+  "median": 5.06,
+  "max": 6.54,
+  "note": "8-vCPU shared box; each call reloads the model, so this is not synthesis latency"
+ },
+ "environment": {
+  "python": "3.13.5",
+  "torch": "2.7.0+cpu",
+  "torchaudio": "2.7.0+cpu",
+  "transformers": "4.57.1",
+  "offline": "HF_HUB_OFFLINE=1, TRANSFORMERS_OFFLINE=1, CUDA hidden",
+  "full_freeze": "tests/receipts/m06_pip_freeze.txt"
+ },
+ "run_log": "tests/receipts/m06_tts_runlog.json"
+}

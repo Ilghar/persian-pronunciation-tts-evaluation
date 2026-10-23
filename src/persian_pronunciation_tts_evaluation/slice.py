@@ -30,11 +30,12 @@ def ingest(rating_csv, key, manifest, run_id="mock-tone-m04"):
     for r in csv.DictReader(io.StringIO(rating_csv)):
         iid = key.get(r["blind_id"])
         if iid is None: unmatched.append(r["blind_id"]); continue
-        v = r["verdict"].strip(); toint = lambda x: int(x) if x.strip().isdigit() else None
-        recs.append({"item_id": iid, "run_id": run_id, "run_kind": "mock", "reviewer_id": r["reviewer_id"] or "unknown",
+        v = (r.get("verdict") or "").strip().lower()
+        toint = lambda x: int(x.strip()) if isinstance(x, str) and x.strip().isdigit() else None  # int() accepts Persian digits
+        recs.append({"item_id": iid, "run_id": run_id, "run_kind": "mock", "reviewer_id": (r.get("reviewer_id") or "").strip() or "unknown",
                      "audio": {"path": man[iid]["path"], "sha256": man[iid]["sha256"], "consent": "synthetic_voice"},
                      "target_judgments": [{"target_id": "t1", "verdict": v}] if v in ("correct", "incorrect", "uncertain") else [],
-                     "intelligibility": toint(r["intelligibility"]), "prosody": toint(r["prosody"])})
+                     "intelligibility": toint(r.get("intelligibility")), "prosody": toint(r.get("prosody"))})
     return recs, unmatched
 def run(items, outdir, rating_csv=None):
     tags = {i["id"]: tag(i["text_raw"]) for i in items}

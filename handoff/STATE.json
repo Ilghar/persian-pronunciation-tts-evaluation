@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "project_id": "03",
-  "stage": "bot_m05_accepted",
+  "stage": "bot_m07_accepted",
   "owner": "Grok Bot (coordinator)",
   "repository": {
     "url": "https://github.com/Ilghar/persian-pronunciation-tts-evaluation",
     "branch": "main",
-    "commit": "M02 b2551fa4e66c07341054dc8a6b82f7449f8a2cad; M03 a4b0db7b88f390e0ba7c66630d6a9f715fb422f2; M04 f04d4fd0796e264b645760d4bc7f79616019a7b8; latest in Drive MANIFEST_M05_M06.json",
+    "commit": "M02 b2551fa4e66c07341054dc8a6b82f7449f8a2cad; M03 a4b0db7b88f390e0ba7c66630d6a9f715fb422f2; M04 f04d4fd0796e264b645760d4bc7f79616019a7b8; M05/M06 c98240e8e6a48b926bf6c0a0bb931dcae58e0d0d; latest in Drive MANIFEST_M07.json",
     "visibility": "private"
   },
   "drive_folder_url": "https://drive.google.com/drive/folders/1Jxk8p48VPn5Kfr2yCy61iwwEycFlfkfi",
@@ -77,15 +77,29 @@
     },
     {
       "id": "M06",
-      "status": "blocked",
+      "status": "accepted",
       "evidence": [
-        "docs/M06_BLOCKER.md"
+        "docs/RESULTS_TTS.md",
+        "docs/THIRD_PARTY.md",
+        "tools/run_moss_tts_nano.py",
+        "src/persian_pronunciation_tts_evaluation/audio_stats.py",
+        "tests/receipts/m06_tts_baseline.json",
+        "tests/receipts/m06_tts_runlog.json",
+        "tests/receipts/m06_pip_freeze.txt",
+        "tests/test_m06_m07.py"
       ]
     },
     {
       "id": "M07",
-      "status": "not_started",
-      "evidence": []
+      "status": "accepted",
+      "evidence": [
+        "docs/FAILURE_ANALYSIS.md",
+        "src/persian_pronunciation_tts_evaluation/failure.py",
+        "tests/test_m06_m07.py",
+        "tests/receipts/m07_failure.json",
+        "tests/receipts/m07_prefix_run.json",
+        "tests/receipts/m07_run.json"
+      ]
     },
     {
       "id": "M08",
@@ -107,7 +121,7 @@
     {
       "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
       "scope": "behavioural, synthetic/mock fixtures",
-      "receipt": "tests/receipts/m05_m06_run.json"
+      "receipt": "tests/receipts/m07_run.json"
     },
     {
       "command": "python3 common/validate_state.py handoff/STATE.json --root .",
@@ -115,17 +129,17 @@
     }
   ],
   "next_actions": [
-    "User decision on real TTS baseline (docs/M06_BLOCKER.md)",
-    "Native review of targets.json",
-    "M07 after M06"
+    "Native listener rates the 12 MOSS WAVs via blind packet",
+    "Review targets.json spans",
+    "Independent review; M08 packaging/CI"
   ],
   "budget": {
     "observed_remaining": "week1 3% used at 11:09 Berlin (user reading)",
     "pool_relationship": "unknown",
     "paid_spend_allowed": false
   },
-  "completion_fraction": 0.5,
-  "notes": "M01-M05 accepted by Bot review only (not independent). Representation draft (site/index.html, CASE_PAGE.md, architecture.svg) exists but M09 not claimed. No image generated.",
+  "completion_fraction": 0.7,
+  "notes": "M01-M07 accepted by Bot review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured.",
   "lease": {
     "status": "active",
     "released_at": null,

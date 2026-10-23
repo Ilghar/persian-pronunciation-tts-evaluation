@@ -1,0 +1,150 @@
+{
+ "adversarial": {
+  "n": 21,
+  "passed": 21,
+  "rows": [
+   {
+    "exception": null,
+    "group": "score",
+    "name": "clean",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "bool_intelligibility_rejected",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "unknown_verdict_rejected",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "judgment_not_dict_no_crash",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "missing_run_kind_no_crash",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "duplicate_reviewer_rejected",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "two_reviewers_disagree_counted",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "correct_vs_uncertain_adjudication",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "score",
+    "name": "mock_never_baseline",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "ingest",
+    "name": "ingest_clean",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "ingest",
+    "name": "ingest_verdict_case_whitespace",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "ingest",
+    "name": "ingest_persian_digits",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "ingest",
+    "name": "ingest_missing_reviewer_column_no_crash",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "ingest",
+    "name": "ingest_unknown_blind_id_reported",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "audio",
+    "name": "pcm16_ok",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "audio",
+    "name": "float32_ok",
+    "pass": true
+   },
+   {
+    "exception": "ValueError: unsupported format tag=1 bits=8",
+    "group": "audio",
+    "name": "pcm8_rejected",
+    "pass": true
+   },
+   {
+    "exception": "ValueError: truncated chunk",
+    "group": "audio",
+    "name": "truncated_rejected",
+    "pass": true
+   },
+   {
+    "exception": "ValueError: not a RIFF/WAVE file",
+    "group": "audio",
+    "name": "not_wav_rejected",
+    "pass": true
+   },
+   {
+    "exception": "ValueError: no audio frames",
+    "group": "audio",
+    "name": "empty_data_no_crash",
+    "pass": true
+   },
+   {
+    "exception": null,
+    "group": "audio",
+    "name": "float_over_full_scale_flagged",
+    "pass": true
+   }
+  ]
+ },
+ "real_run": {
+  "determinism": "0/12",
+  "diagnosis": [
+   "Seeded CPU reruns produced different bytes for every item: the upstream pipeline is not bit-reproducible with --seed alone, so any score must be tied to the exact audio sha256, not to the command.",
+   "Items flagged by objective audio checks need listening before any pronunciation verdict; the flags are not pronunciation errors."
+  ],
+  "flagged_items": {
+   "FA09": [
+    "clipping",
+    "mostly_silent",
+    "over_full_scale"
+   ]
+  },
+  "not_fixed": "Upstream nondeterminism is not patched here (would modify third-party code); recorded as a limitation.",
+  "source": "m06_tts_baseline.json"
+ }
+}
