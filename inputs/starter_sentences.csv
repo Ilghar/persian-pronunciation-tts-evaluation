@@ -1,0 +1,13 @@
+id,text,phenomenon,gold_pronunciation,audio_path,review_status,source_kind
+FA01,شیر را در یخچال بگذار.,semantic_homonym_same_pronunciation_control,,,needs_native_review,new_synthetic_text_not_benchmark
+FA02,شیر در جنگل زندگی می‌کند.,semantic_homonym_same_pronunciation_control,,,needs_native_review,new_synthetic_text_not_benchmark
+FA03,لطفاً شیر آب را ببند.,semantic_homonym_same_pronunciation_control,,,needs_native_review,new_synthetic_text_not_benchmark
+FA04,کتابِ دوستِ من روی میز است.,ezafe_explicit,,,needs_native_review,new_synthetic_text_not_benchmark
+FA05,کتاب دوست من روی میز است.,ezafe_implicit,,,needs_native_review,new_synthetic_text_not_benchmark
+FA06,من فردا به خانه می‌روم.,formal_register_zwnj,,,needs_native_review,new_synthetic_text_not_benchmark
+FA07,من فردا می‌رم خونه.,informal_register,,,needs_native_review,new_synthetic_text_not_benchmark
+FA08,جلسه ساعت ۱۴:۳۰ شروع می‌شود.,numerals_time,,,needs_native_review,new_synthetic_text_not_benchmark
+FA09,قیمت این کتاب ۱۲۵۰۰ تومان است.,numerals_quantity,,,needs_native_review,new_synthetic_text_not_benchmark
+FA10,نسخهٔ جدید Python را نصب کردم.,code_switching,,,needs_native_review,new_synthetic_text_not_benchmark
+FA11,این یک آزمایش است، نه نتیجهٔ ارزیابی.,punctuation,,,needs_native_review,new_synthetic_text_not_benchmark
+FA12,آیا فردا باران می‌بارد؟,question_intonation,,,needs_native_review,new_synthetic_text_not_benchmark

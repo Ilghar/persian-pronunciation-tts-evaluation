@@ -1,0 +1,7 @@
+flowchart LR
+  A["Original text + phenomenon tags (raw preserved)"] --> B["Native-reviewed reference pronunciations (when available)"]
+  B --> C["Optional credited synthesizer adapter (off by default)"]
+  C --> D["Consented audio / recorded-output manifest"]
+  D --> E["Blind human ratings + timing metadata"]
+  E --> F["Scorer: missing => not_evaluated; mock excluded"]
+  F --> G["Reproducible report + limitations"]
