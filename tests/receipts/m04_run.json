@@ -1,0 +1,32 @@
+{
+ "utc_time": "2026-10-23T08:55:15+00:00",
+ "python": "3.13.5",
+ "environment": "fresh copy, stdlib only, no network",
+ "base_commit": "a4b0db7b88f390e0ba7c66630d6a9f715fb422f2",
+ "fixture_sha256": {
+  "inputs/starter_sentences.csv": "ab5b73d326e427a754c942eb9c9c59572a04c7e409b3f2190548302a6140c702",
+  "fixtures/mock_blind_ratings_m04.csv": "a8a45bd2f04e3b0e0122b8c7b34216e478466933b142bc916b6ee4f16f7186a5"
+ },
+ "runs": [
+  {
+   "name": "unittest",
+   "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+   "exit_code": 0,
+   "stdout": "",
+   "stderr": "test_normalized_duplicates_detected_and_split_stable (test_scoring.Items.test_normalized_duplicates_detected_and_split_stable) ... ok\ntest_raw_text_preserved_including_zwnj (test_scoring.Items.test_raw_text_preserved_including_zwnj) ... ok\ntest_mock_excluded_missing_not_evaluated (test_scoring.Scoring.test_mock_excluded_missing_not_evaluated) ... ok\ntest_blind_packet_hides_item_ids_and_is_deterministic (test_slice.Slice.test_blind_packet_hides_item_ids_and_is_deterministic) ... ok\ntest_end_to_end_mock_never_baseline (test_slice.Slice.test_end_to_end_mock_never_baseline) ... ok\ntest_tagging (test_slice.Slice.test_tagging) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.094s\n\nOK\n"
+  },
+  {
+   "name": "slice",
+   "command": "PYTHONPATH=src python3 -m persian_pronunciation_tts_evaluation slice inputs/starter_sentences.csv fixtures/mock_blind_ratings_m04.csv --out out/m04",
+   "exit_code": 0,
+   "stdout": "{\"items\": 12, \"audio\": 12, \"baseline_runs\": [], \"warning\": \"MOCK tone audio; no TTS model run; results are pipeline checks, not a synthesis baseline\"}\n",
+   "stderr": ""
+  },
+  {
+   "name": "validate_state",
+   "command": "python3 common/validate_state.py handoff/STATE.json --root .",
+   "note": "run in working tree after STATE update (fresh copy excluded receipts, so its earlier pre-run failed on missing evidence paths)",
+   "output": "{\"valid\": true, \"errors\": [], \"scope\": \"bookkeeping only, not semantic or production readiness\"}\nexit=0"
+  }
+ ]
+}

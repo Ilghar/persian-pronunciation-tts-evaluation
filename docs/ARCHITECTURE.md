@@ -30,3 +30,7 @@ Only newly drafted text. Audio requires consent/synthetic-voice record + sha256.
 
 ## Review
 Bot self-review 2026-10-23; Persian-language native review of items and independent technical review pending.
+
+## Implementation status (after M04)
+Built: `items.py` (includes normalize + splits), `score.py`, `slice.py` (M04 tagging, MOCK tone synth, blind packet, ingest), `cli.py`. Planned not built: separate `ratings.py`, real synthesizer adapter.
+Schemas are documentation + test references; they are not machine-enforced (stdlib, no jsonschema).

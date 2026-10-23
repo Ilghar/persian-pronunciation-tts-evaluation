@@ -1,0 +1,5 @@
+blind_id,audio,verdict,intelligibility,prosody,reviewer_id
+B004,blind_audio/B004.wav,incorrect,1,1,mock-reviewer
+B007,blind_audio/B007.wav,uncertain,1,1,mock-reviewer
+B999,x,correct,5,5,mock-reviewer
+B005,blind_audio/B005.wav,,,,mock-reviewer

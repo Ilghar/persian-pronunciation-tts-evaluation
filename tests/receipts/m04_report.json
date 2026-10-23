@@ -1,0 +1,286 @@
+{
+ "manifest": [
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA01",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA01.wav",
+   "run_kind": "mock",
+   "sha256": "f7f5b639a1580c993e1d2ad81757402b662803d0e5a02e74ec28e73301822264",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA02",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA02.wav",
+   "run_kind": "mock",
+   "sha256": "3804ec1c887bad09a9180990fa080822fbddca1628500e1417ada124b889184f",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA03",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA03.wav",
+   "run_kind": "mock",
+   "sha256": "3c4e27f1c216601fa2c0ec22b4d5c81a8ce0c1b4990860798ffe13a9f109a460",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA04",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA04.wav",
+   "run_kind": "mock",
+   "sha256": "5d7ea70f3e708c7810cd5a500470ee08ba520fc7659a6bfd27e27b377e2ef08d",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA05",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA05.wav",
+   "run_kind": "mock",
+   "sha256": "b93e1bd43b466c733e72a040f6c1dfcf074c3cced8a2af76b94f4ea50f2d0f45",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA06",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA06.wav",
+   "run_kind": "mock",
+   "sha256": "a7cff5c5477b4f2836dce4b799781b9d4e151bf1662e87d33d5b9da430e327d2",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA07",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA07.wav",
+   "run_kind": "mock",
+   "sha256": "5bc0f808986eead8784446096f2dcdb3e185fcd8edc813e9ec46d4c76b771912",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA08",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA08.wav",
+   "run_kind": "mock",
+   "sha256": "1e8952d8a7b396f4fe52862c559e86241b88625f9377b6ef70b6a011387c0e6c",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA09",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA09.wav",
+   "run_kind": "mock",
+   "sha256": "03ad5e3508ad329c5702c38292291d97e9d0258cca52e3a12ab4495a3bcb614b",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA10",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA10.wav",
+   "run_kind": "mock",
+   "sha256": "91695c424ad0f46c4edefc1dd247158a969f5695673ae4efed13e194cdffa6ed",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA11",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA11.wav",
+   "run_kind": "mock",
+   "sha256": "a87cf40aff6d1493401229daacb74577bd2d7056aaeffb14910529239035879f",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  },
+  {
+   "consent": "synthetic_voice",
+   "item_id": "FA12",
+   "label": "MOCK TONE - NOT SPEECH",
+   "path": "audio/FA12.wav",
+   "run_kind": "mock",
+   "sha256": "f9e20ff0e894e8792e976c385115873d83b59cfe5d0fe2dffc3c5dcb1358f420",
+   "system": {
+    "license_checked": true,
+    "name": "mock-tone-generator",
+    "revision": "m04"
+   }
+  }
+ ],
+ "score": {
+  "baseline_table": {},
+  "disagreements": 0,
+  "errors": [],
+  "runs": {
+   "mock-tone-m04": {
+    "by_phenomenon": {
+     "semantic_homonym_same_pronunciation_control": {
+      "incorrect": 1,
+      "uncertain": 1
+     }
+    },
+    "eligible_for_baseline": false,
+    "error_rate": {
+     "denominator": 1,
+     "incorrect": 1,
+     "value": 1.0
+    },
+    "not_evaluated_items": 10,
+    "run_kind": "mock",
+    "uncertain": 1
+   }
+  }
+ },
+ "tags": {
+  "FA01": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA02": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 1
+  },
+  "FA03": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA04": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA05": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA06": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 1
+  },
+  "FA07": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 1
+  },
+  "FA08": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 4,
+   "question": false,
+   "zwnj": 1
+  },
+  "FA09": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 5,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA10": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 6,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA11": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": false,
+   "zwnj": 0
+  },
+  "FA12": {
+   "arabic_yeh_kaf": 0,
+   "ascii_digits": 0,
+   "latin": 0,
+   "persian_digits": 0,
+   "question": true,
+   "zwnj": 1
+  }
+ },
+ "unmatched_blind_ids": [
+  "B999"
+ ],
+ "warning": "MOCK tone audio; no TTS model run; results are pipeline checks, not a synthesis baseline"
+}
