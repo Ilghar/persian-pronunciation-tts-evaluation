@@ -1,0 +1,90 @@
+{
+ "run_kind": "mock",
+ "note": "Hand-written mock ratings to exercise code paths. No audio exists; no real reviewers; not a TTS result.",
+ "ratings": [
+  {
+   "item_id": "FA01",
+   "run_id": "mock-run",
+   "run_kind": "mock",
+   "audio": {
+    "path": "none/mock.wav",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "consent": "synthetic_voice"
+   },
+   "reviewer_id": "rv1",
+   "target_judgments": [
+    {
+     "target_id": "t1",
+     "verdict": "correct"
+    }
+   ],
+   "intelligibility": 4,
+   "prosody": 3
+  },
+  {
+   "item_id": "FA02",
+   "run_id": "mock-run",
+   "run_kind": "mock",
+   "audio": {
+    "path": "none/mock.wav",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "consent": "synthetic_voice"
+   },
+   "reviewer_id": "rv1",
+   "target_judgments": [
+    {
+     "target_id": "t1",
+     "verdict": "incorrect"
+    }
+   ],
+   "intelligibility": 3,
+   "prosody": 3
+  },
+  {
+   "item_id": "FA02",
+   "run_id": "mock-run",
+   "run_kind": "mock",
+   "audio": {
+    "path": "none/mock.wav",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "consent": "synthetic_voice"
+   },
+   "reviewer_id": "rv2",
+   "target_judgments": [
+    {
+     "target_id": "t1",
+     "verdict": "correct"
+    }
+   ],
+   "intelligibility": 4,
+   "prosody": 4
+  },
+  {
+   "item_id": "FA03",
+   "run_id": "mock-run",
+   "run_kind": "mock",
+   "audio": null,
+   "reviewer_id": "rv1",
+   "target_judgments": []
+  },
+  {
+   "item_id": "FA04",
+   "run_id": "mock-run",
+   "run_kind": "mock",
+   "audio": {
+    "path": "none/mock.wav",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "consent": "synthetic_voice"
+   },
+   "reviewer_id": "rv1",
+   "target_judgments": [
+    {
+     "target_id": "t1",
+     "verdict": "uncertain"
+    }
+   ],
+   "prosody": 7,
+   "latency_seconds": 0.5
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "baseline_table": {},
+ "disagreements": 1,
+ "errors": [
+  "prosody out of range FA04",
+  "latency on non-measured run mock-run"
+ ],
+ "items_sha256": "ab5b73d326e427a754c942eb9c9c59572a04c7e409b3f2190548302a6140c702",
+ "n_items": 12,
+ "normalized_duplicates": [],
+ "ratings_sha256": "a3d1fe4f4f544c34f12c6e504ba98747f451909fca1bf9f04956da5f9dedb0d4",
+ "runs": {
+  "mock-run": {
+   "by_phenomenon": {
+    "ezafe_explicit": {
+     "uncertain": 1
+    },
+    "semantic_homonym_same_pronunciation_control": {
+     "correct": 2,
+     "incorrect": 1
+    }
+   },
+   "eligible_for_baseline": false,
+   "error_rate": {
+    "denominator": 3,
+    "incorrect": 1,
+    "value": 0.333333
+   },
+   "not_evaluated_items": 9,
+   "run_kind": "mock",
+   "uncertain": 1
+  }
+ }
+}

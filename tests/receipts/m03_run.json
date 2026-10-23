@@ -1,0 +1,26 @@
+{
+ "utc_time": "2026-10-23T08:49:29+00:00",
+ "python": "3.13.5",
+ "environment": "fresh copy of working tree in /tmp/fresh (no installed packages, stdlib only)",
+ "base_commit": "b2551fa4e66c07341054dc8a6b82f7449f8a2cad",
+ "fixture_sha256": {
+  "inputs/starter_sentences.csv": "ab5b73d326e427a754c942eb9c9c59572a04c7e409b3f2190548302a6140c702",
+  "fixtures/mock_ratings_m03.json": "a3d1fe4f4f544c34f12c6e504ba98747f451909fca1bf9f04956da5f9dedb0d4"
+ },
+ "runs": [
+  {
+   "name": "unittest",
+   "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+   "exit_code": 0,
+   "stdout": "",
+   "stderr": "test_normalized_duplicates_detected_and_split_stable (test_scoring.Items.test_normalized_duplicates_detected_and_split_stable) ... ok\ntest_raw_text_preserved_including_zwnj (test_scoring.Items.test_raw_text_preserved_including_zwnj) ... ok\ntest_mock_excluded_missing_not_evaluated (test_scoring.Scoring.test_mock_excluded_missing_not_evaluated) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.031s\n\nOK\n"
+  },
+  {
+   "name": "cli",
+   "command": "PYTHONPATH=src python3 -m persian_pronunciation_tts_evaluation score inputs/starter_sentences.csv fixtures/mock_ratings_m03.json --out out/m03",
+   "exit_code": 0,
+   "stdout": "{\"n_items\": 12, \"baseline_runs\": [], \"errors\": 2}\n",
+   "stderr": ""
+  }
+ ]
+}
