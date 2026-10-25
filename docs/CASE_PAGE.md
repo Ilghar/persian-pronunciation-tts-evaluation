@@ -5,7 +5,7 @@
 **Status:** Real MOSS-TTS-Nano CPU output measured at signal level only; no pronunciation ratings. Private work in progress.
 
 ## Contribution
-Ilghar Dadgostari: problem framing, requirements and evaluation direction. Implementation AI-assisted (Grok Bot), reviewed only by Grok Bot so far.
+Concept, problem framing, requirements and evaluation direction: ilghar.studio.
 
 ## Architecture
 See `architecture.mmd` (authoritative) and `architecture.svg` (fallback). Stages: Original text + phenomenon tags → Human-reviewed reference pronunciations when available → Optional credited upstream synthesizer adapter → Consented audio or recorded-output manifest → Blind human ratings + timing metadata → Reproducible baseline and limitations
@@ -23,7 +23,7 @@ See `architecture.mmd` (authoritative) and `architecture.svg` (fallback). Stages
 - Mock tone audio (M03/M04) is not speech and is never a baseline.
 - Reference pronunciations and spans are unreviewed.
 - 12 items; deterministic split gives 11 dev / 1 test, too small for a test claim.
-- Illustration (assets/ASSETS.json) is AI-generated, illustration only, stored on Drive not git; the native diagram is authoritative.
+- Illustration (assets/ASSETS.json) is for illustration only and is stored on Drive, not git; the native diagram is authoritative.
 
 ## Reproduce
 See README and `tests/receipts/`. Next steps: `handoff/NEXT.md`.

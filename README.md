@@ -1,13 +1,13 @@
 # Persian pronunciation and expressive TTS evaluation
 
-**Status: work in progress (private). 7/10 milestones (Bot-reviewed); synthetic inputs; real TTS output measured at signal level only.**
+**Status: work in progress (private). 7/10 milestones; synthetic inputs; real TTS output measured at signal level only.**
 
 - Product contract: `docs/PRODUCT_CONTRACT.md`
 - Sources/evidence vs plans: `docs/SOURCES.md`
 - Architecture/experiment plan: `docs/ARCHITECTURE.md`, ADR `docs/adr/0001-scope-and-boundaries.md`
 - Handoff: `handoff/`
 
-Contribution: Ilghar — problem framing, requirements, evaluation direction. Implementation AI-assisted (Grok Bot). License: not yet chosen.
+Contribution: ilghar.studio — concept, problem framing, requirements, evaluation direction. License: not yet chosen.
 
 ## Install (M08)
 ```sh
