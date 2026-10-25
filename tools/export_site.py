@@ -6,9 +6,9 @@ PKG = [p.name for p in (ROOT / "src").iterdir() if p.is_dir() and not p.name.sta
 validate = __import__(f"{PKG}.schema", fromlist=["validate"]).validate
 THEME = __import__(f"{PKG}.theme", fromlist=["css"])
 CSS = THEME.css(".ilg-case") + """body{margin:0}.ilg-case{font:1.05rem/1.6 Georgia,'Noto Naskh Arabic',serif}
-.ilg-case main{max-width:46rem;margin:0 auto;padding:3rem 1.25rem}.ilg-case h1{font-size:2rem;line-height:1.2}.ilg-case h2{margin-top:2.5rem;color:var(--accent-text);font-size:1.15rem;text-transform:uppercase;letter-spacing:.06em}
-.ilg-case .lede{font-size:1.2rem;color:var(--muted-text)}.ilg-case ol.flow{padding-left:1.25rem}.ilg-case table{border-collapse:collapse;width:100%}.ilg-case td,.ilg-case th{border-bottom:1px solid var(--line);padding:.4rem;text-align:left;vertical-align:top}
-.ilg-case .badge{display:inline-block;border:1px solid var(--accent-text);padding:0 .5rem;border-radius:1rem;font-size:.85rem}
+.ilg-case main{max-width:46rem;margin:0 auto;padding:3rem 1.25rem}.ilg-case h1{font-size:2rem;line-height:1.2}.ilg-case h2{margin-top:2.5rem;color:var(--ink);font-size:1.15rem;border-top:2px solid var(--accent);padding-top:.6rem;display:inline-block;text-transform:uppercase;letter-spacing:.06em}
+.ilg-case .lede{font-size:1.2rem;color:var(--ink)}.ilg-case ol.flow{padding-left:1.25rem}.ilg-case table{border-collapse:collapse;width:100%}.ilg-case td,.ilg-case th{border-bottom:1px solid var(--line);padding:.4rem;text-align:left;vertical-align:top}
+.ilg-case .badge{display:inline-block;border:1px solid var(--accent);padding:0 .5rem;border-radius:1rem;font-size:.85rem}
 @media (prefers-reduced-motion:reduce){.ilg-case *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}"""
 def render(p):
     e = lambda s: html.escape(str(s), quote=True)
