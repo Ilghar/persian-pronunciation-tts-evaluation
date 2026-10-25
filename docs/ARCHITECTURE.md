@@ -29,7 +29,7 @@ Python ≥3.11 stdlib (`csv`, `unicodedata`). CPU-only. No audio libraries until
 Only newly drafted text. Audio requires consent/synthetic-voice record + sha256. Upstream models/code (MOSS-TTS-Nano, LLM-Powered-G2P) not copied; license check required before adapter use. No voice cloning. Repo license at M10.
 
 ## Review
-Bot self-review 2026-10-23; Persian-language native review of items and independent technical review pending.
+Internal self-review 2026-10-23; Persian-language native review of items and independent technical review pending.
 
 ## Implementation status (after M04)
 Built: `items.py` (includes normalize + splits), `score.py`, `slice.py` (M04 tagging, MOCK tone synth, blind packet, ingest), `cli.py`. Planned not built: separate `ratings.py`, real synthesizer adapter.

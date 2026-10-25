@@ -17,7 +17,7 @@ Output: 48 kHz, 2-channel, IEEE float32 WAV.
 **Not measured:**
 - Pronunciation correctness (error rate denominator = 0): there are no native ratings, and `reference_pronunciation` is null for all items.
 - Intelligibility and naturalness.
-- Whether the audio is Persian speech at all: nobody has listened to it, Bot included.
+- Whether the audio is Persian speech at all: nobody has listened to it.
 
 The numbers above are signal-level only. They show the pipeline runs on real system output; they are **not** a quality baseline.
 

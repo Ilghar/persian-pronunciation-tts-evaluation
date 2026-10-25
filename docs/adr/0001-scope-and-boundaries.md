@@ -1,5 +1,5 @@
 # ADR 0001 — Scope and boundaries
-Status: accepted (Bot self-review, 2026-10-23); independent review pending.
+Status: accepted (internal self-review, 2026-10-23); independent review pending.
 
 ## Decision
 - Build an original evaluation layer, not a TTS model; upstream forks remain references.

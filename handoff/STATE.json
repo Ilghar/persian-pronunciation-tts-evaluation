@@ -2,7 +2,7 @@
  "schema_version": 1,
  "project_id": "03",
  "stage": "paused_by_user",
- "owner": "Grok Bot (coordinator)",
+ "owner": "ilghar.studio coordinator",
  "repository": {
   "url": "https://github.com/Ilghar/persian-pronunciation-tts-evaluation",
   "branch": "main",
@@ -144,7 +144,7 @@
   "Owner: verify Actions budget $0 / no payment method, then move docs/ci-proposed/ci.yml to .github/workflows/ (unblocks M08)",
   "Native listener rates the 12 MOSS WAVs via blind packet",
   "Review targets.json spans",
-  "Human/independent review of M01-M07 (AI self-review done)"
+  "Human/independent review of M01-M07 (internal self-review done)"
  ],
  "budget": {
   "observed_remaining": "week1 3% used at 11:09 Berlin (user reading)",
@@ -152,12 +152,12 @@
   "paid_spend_allowed": false
  },
  "completion_fraction": 0.7,
- "notes": "M01-M07 accepted by Bot review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured. M01-M07 re-checked 2026-10-25 by AI self-review (separate pass, not human): docs/REVIEW_M01_M07.md. PAUSED by the user 2026-10-25 13:52 Berlin: no further changes until resumed.",
+ "notes": "M01-M07 accepted by internal review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured. M01-M07 re-checked 2026-10-25 by AI self-review (separate pass, not human): docs/REVIEW_M01_M07.md. PAUSED by the user 2026-10-25 13:52 Berlin: no further changes until resumed.",
  "lease": {
   "status": "active",
   "released_at": null,
-  "holder": "Grok Bot",
-  "note": "Bot owns main until release report"
+  "holder": "ilghar.studio coordinator",
+  "note": "Coordinator owns main until release report"
  },
  "portfolio_control_locator": {
   "coordinator_project": "01",

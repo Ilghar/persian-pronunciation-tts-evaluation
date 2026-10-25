@@ -16,7 +16,7 @@ Persian TTS errors are often judged by overall "naturalness". That hides concret
 - No model training/fine-tuning claim, no voice cloning, no paid GPU, no model download by default.
 - Starter sentences are not gold; no claimed pronunciation dataset.
 - Speaker similarity is not a pronunciation proxy.
-- Forked repos are not presented as Ilghar-authored models.
+- Forked repos are not presented as ilghar.studio-authored models.
 
 ## Acceptance criteria for the finished tool (planned)
 1. Raw Persian strings round-trip byte-identically; normalization is a separate field.
@@ -31,4 +31,4 @@ Persian TTS errors are often judged by overall "naturalness". That hides concret
 Only newly drafted text in repo. Any future audio requires consent + license record; no real person's voice supplied. Upstream licenses (MOSS-TTS-Nano, LLM-Powered-G2P) must be checked before any adapter uses them. No repo license chosen yet (M10). Gaps: no native review, no gold pronunciations, no audio.
 
 ## Contribution
-Ilghar: problem framing, phenomenon selection direction, fork curation. Implementation: AI-assisted (Grok Bot), attributed per commit.
+Creator: ilghar.studio — problem framing, phenomenon selection direction, fork curation.
