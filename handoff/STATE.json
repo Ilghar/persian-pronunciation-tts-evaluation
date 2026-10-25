@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "project_id": "03",
- "stage": "bot_m08_blocked_on_ci",
+ "stage": "paused_by_user",
  "owner": "Grok Bot (coordinator)",
  "repository": {
   "url": "https://github.com/Ilghar/persian-pronunciation-tts-evaluation",
@@ -140,6 +140,7 @@
   }
  ],
  "next_actions": [
+  "PAUSED by user (2026-10-25): do not change this repo until the user resumes it",
   "Owner: verify Actions budget $0 / no payment method, then move docs/ci-proposed/ci.yml to .github/workflows/ (unblocks M08)",
   "Native listener rates the 12 MOSS WAVs via blind packet",
   "Review targets.json spans",
@@ -151,7 +152,7 @@
   "paid_spend_allowed": false
  },
  "completion_fraction": 0.7,
- "notes": "M01-M07 accepted by Bot review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured. M01-M07 re-checked 2026-10-25 by AI self-review (separate pass, not human): docs/REVIEW_M01_M07.md.",
+ "notes": "M01-M07 accepted by Bot review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured. M01-M07 re-checked 2026-10-25 by AI self-review (separate pass, not human): docs/REVIEW_M01_M07.md. PAUSED by the user 2026-10-25 13:52 Berlin: no further changes until resumed.",
  "lease": {
   "status": "active",
   "released_at": null,
