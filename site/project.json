@@ -3,7 +3,7 @@
  "title": "Persian pronunciation and expressive TTS evaluation",
  "summary": "How can a small reproducible Persian evaluation expose pronunciation, ezafe, numeral, register and code-switching errors without confusing subjective prosody with intelligibility?",
  "status": "in_progress",
- "evidence_level": "Pipeline implemented on mock audio; no synthesis results",
+ "evidence_level": "Real MOSS-TTS-Nano CPU output measured at signal level only; no pronunciation ratings",
  "contribution": "Ilghar Dadgostari: problem framing, requirements and evaluation direction. Implementation AI-assisted (Grok Bot), reviewed only by Grok Bot so far.",
  "architecture": [
   "Original text + phenomenon tags",
@@ -53,7 +53,9 @@
  "assets": [],
  "links": [],
  "limitations": [
-  "No TTS model has been run; mock tone audio is not speech and is never a baseline.",
+  "One upstream TTS run (MOSS-TTS-Nano-100M, CPU); audio not listened to, so pronunciation, intelligibility and naturalness are unmeasured.",
+  "Seeded reruns are not bit-identical (0/12); ratings must be keyed to audio sha256.",
+  "Mock tone audio (M03/M04) is not speech and is never a baseline.",
   "Reference pronunciations and spans are unreviewed.",
   "12 items; deterministic split gives 11 dev / 1 test, too small for a test claim.",
   "Illustration (assets/ASSETS.json) is AI-generated, illustration only, stored on Drive not git; the native diagram is authoritative."

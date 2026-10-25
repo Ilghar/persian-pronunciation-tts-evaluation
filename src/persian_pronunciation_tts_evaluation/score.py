@@ -7,7 +7,7 @@ def score(items, ratings):
     rated = defaultdict(set); seen = set()
     VERDICTS = {"correct", "incorrect", "uncertain"}
     for r in ratings:
-        if not isinstance(r, dict) or r.get("run_kind") not in ("mock", "synthesized", "recorded"):
+        if not isinstance(r, dict) or r.get("run_kind") not in ("mock", "synthesized", "recorded_human"):  # = rating.schema.json enum (review R-03)
             errors.append(f"missing/invalid run_kind on rating {r.get('item_id') if isinstance(r, dict) else r!r}"); continue
         run = per_run[r["run_id"]]; run["kind"] = r["run_kind"]
         if r.get("item_id") not in phen: errors.append(f"unknown item {r.get('item_id')}"); continue

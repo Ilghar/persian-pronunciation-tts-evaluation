@@ -21,6 +21,6 @@ Output: 48 kHz, 2-channel, IEEE float32 WAV.
 
 The numbers above are signal-level only. They show the pipeline runs on real system output; they are **not** a quality baseline.
 
-Audio is not committed (~9 MB, and the redistribution caveats are in THIRD_PARTY.md). WAVs stay on the shared box at `/workspace/tts/out/{a,b}/`, with per-item sha256 in the receipt.
+Audio is not committed (~9 MB, and the redistribution caveats are in THIRD_PARTY.md). WAVs stay outside git in the evaluator's local output directory (`<out>/{a,b}/`, the `OUT_DIR_A`/`OUT_DIR_B` arguments documented in `tools/run_moss_tts_nano.py`), with per-item sha256 in the receipt.
 
 Next step to get a quality baseline: create a blind packet from these WAVs, have a native speaker rate them, and run `score`.

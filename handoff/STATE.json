@@ -1,154 +1,154 @@
 {
-  "schema_version": 1,
-  "project_id": "03",
-  "stage": "bot_m07_accepted",
-  "owner": "Grok Bot (coordinator)",
-  "repository": {
-    "url": "https://github.com/Ilghar/persian-pronunciation-tts-evaluation",
-    "branch": "main",
-    "commit": "M02 b2551fa4e66c07341054dc8a6b82f7449f8a2cad; M03 a4b0db7b88f390e0ba7c66630d6a9f715fb422f2; M04 f04d4fd0796e264b645760d4bc7f79616019a7b8; M05/M06 c98240e8e6a48b926bf6c0a0bb931dcae58e0d0d; latest in Drive MANIFEST_M07.json",
-    "visibility": "private"
+ "schema_version": 1,
+ "project_id": "03",
+ "stage": "bot_m07_accepted",
+ "owner": "Grok Bot (coordinator)",
+ "repository": {
+  "url": "https://github.com/Ilghar/persian-pronunciation-tts-evaluation",
+  "branch": "main",
+  "commit": "M02 b2551fa4e66c07341054dc8a6b82f7449f8a2cad; M03 a4b0db7b88f390e0ba7c66630d6a9f715fb422f2; M04 f04d4fd0796e264b645760d4bc7f79616019a7b8; M05/M06 c98240e8e6a48b926bf6c0a0bb931dcae58e0d0d; latest in Drive MANIFEST_M07.json",
+  "visibility": "private"
+ },
+ "drive_folder_url": "https://drive.google.com/drive/folders/1Jxk8p48VPn5Kfr2yCy61iwwEycFlfkfi",
+ "milestones": [
+  {
+   "id": "M01",
+   "status": "accepted",
+   "evidence": [
+    "docs/SOURCES.md",
+    "docs/PRODUCT_CONTRACT.md",
+    "inputs/source_register.jsonl"
+   ]
   },
-  "drive_folder_url": "https://drive.google.com/drive/folders/1Jxk8p48VPn5Kfr2yCy61iwwEycFlfkfi",
-  "milestones": [
-    {
-      "id": "M01",
-      "status": "accepted",
-      "evidence": [
-        "docs/SOURCES.md",
-        "docs/PRODUCT_CONTRACT.md",
-        "inputs/source_register.jsonl"
-      ]
-    },
-    {
-      "id": "M02",
-      "status": "accepted",
-      "evidence": [
-        "docs/ARCHITECTURE.md",
-        "docs/REVIEW_M01_M03.md",
-        "docs/adr/0001-scope-and-boundaries.md",
-        "docs/architecture.mmd",
-        "schemas/item.schema.json",
-        "schemas/rating.schema.json",
-        "tools/check_m02.py"
-      ]
-    },
-    {
-      "id": "M03",
-      "status": "accepted",
-      "evidence": [
-        "src/persian_pronunciation_tts_evaluation/__init__.py",
-        "src/persian_pronunciation_tts_evaluation/__main__.py",
-        "src/persian_pronunciation_tts_evaluation/cli.py",
-        "src/persian_pronunciation_tts_evaluation/items.py",
-        "src/persian_pronunciation_tts_evaluation/score.py",
-        "tests/test_scoring.py",
-        "fixtures/mock_ratings_m03.json",
-        "tests/receipts/m03_run.json",
-        "tests/receipts/m03_report.json",
-        "README.md"
-      ]
-    },
-    {
-      "id": "M04",
-      "status": "accepted",
-      "evidence": [
-        "src/persian_pronunciation_tts_evaluation/slice.py",
-        "tests/test_slice.py",
-        "inputs/starter_sentences.csv",
-        "fixtures/mock_blind_ratings_m04.csv",
-        "tests/receipts/m04_run.json",
-        "tests/receipts/m04_report.json",
-        "docs/REVIEW_M01_M03.md"
-      ]
-    },
-    {
-      "id": "M05",
-      "status": "accepted",
-      "evidence": [
-        "src/persian_pronunciation_tts_evaluation/schema.py",
-        "data/collection_v1/DATASHEET.md",
-        "tests/receipts/m05_manifest.json",
-        "tests/receipts/m05_m06_run.json",
-        "src/persian_pronunciation_tts_evaluation/collection.py",
-        "data/collection_v1/targets.json",
-        "tests/test_m05.py"
-      ]
-    },
-    {
-      "id": "M06",
-      "status": "accepted",
-      "evidence": [
-        "docs/RESULTS_TTS.md",
-        "docs/THIRD_PARTY.md",
-        "tools/run_moss_tts_nano.py",
-        "src/persian_pronunciation_tts_evaluation/audio_stats.py",
-        "tests/receipts/m06_tts_baseline.json",
-        "tests/receipts/m06_tts_runlog.json",
-        "tests/receipts/m06_pip_freeze.txt",
-        "tests/test_m06_m07.py"
-      ]
-    },
-    {
-      "id": "M07",
-      "status": "accepted",
-      "evidence": [
-        "docs/FAILURE_ANALYSIS.md",
-        "src/persian_pronunciation_tts_evaluation/failure.py",
-        "tests/test_m06_m07.py",
-        "tests/receipts/m07_failure.json",
-        "tests/receipts/m07_prefix_run.json",
-        "tests/receipts/m07_run.json"
-      ]
-    },
-    {
-      "id": "M08",
-      "status": "not_started",
-      "evidence": []
-    },
-    {
-      "id": "M09",
-      "status": "not_started",
-      "evidence": []
-    },
-    {
-      "id": "M10",
-      "status": "not_started",
-      "evidence": []
-    }
-  ],
-  "tests": [
-    {
-      "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
-      "scope": "behavioural, synthetic/mock fixtures",
-      "receipt": "tests/receipts/m07_run.json"
-    },
-    {
-      "command": "python3 common/validate_state.py handoff/STATE.json --root .",
-      "scope": "bookkeeping only"
-    }
-  ],
-  "next_actions": [
-    "Native listener rates the 12 MOSS WAVs via blind packet",
-    "Review targets.json spans",
-    "Independent review; M08 packaging/CI"
-  ],
-  "budget": {
-    "observed_remaining": "week1 3% used at 11:09 Berlin (user reading)",
-    "pool_relationship": "unknown",
-    "paid_spend_allowed": false
+  {
+   "id": "M02",
+   "status": "accepted",
+   "evidence": [
+    "docs/ARCHITECTURE.md",
+    "docs/REVIEW_M01_M03.md",
+    "docs/adr/0001-scope-and-boundaries.md",
+    "docs/architecture.mmd",
+    "schemas/item.schema.json",
+    "schemas/rating.schema.json",
+    "tools/check_m02.py"
+   ]
   },
-  "completion_fraction": 0.7,
-  "notes": "M01-M07 accepted by Bot review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured.",
-  "lease": {
-    "status": "active",
-    "released_at": null,
-    "holder": "Grok Bot",
-    "note": "Bot owns main until release report"
+  {
+   "id": "M03",
+   "status": "accepted",
+   "evidence": [
+    "src/persian_pronunciation_tts_evaluation/__init__.py",
+    "src/persian_pronunciation_tts_evaluation/__main__.py",
+    "src/persian_pronunciation_tts_evaluation/cli.py",
+    "src/persian_pronunciation_tts_evaluation/items.py",
+    "src/persian_pronunciation_tts_evaluation/score.py",
+    "tests/test_scoring.py",
+    "fixtures/mock_ratings_m03.json",
+    "tests/receipts/m03_run.json",
+    "tests/receipts/m03_report.json",
+    "README.md"
+   ]
   },
-  "portfolio_control_locator": {
-    "coordinator_project": "01",
-    "repo_path": "portfolio/ (in abstention-routing-harness)",
-    "drive_path": "project01 outputs/current/portfolio/"
+  {
+   "id": "M04",
+   "status": "accepted",
+   "evidence": [
+    "src/persian_pronunciation_tts_evaluation/slice.py",
+    "tests/test_slice.py",
+    "inputs/starter_sentences.csv",
+    "fixtures/mock_blind_ratings_m04.csv",
+    "tests/receipts/m04_run.json",
+    "tests/receipts/m04_report.json",
+    "docs/REVIEW_M01_M03.md"
+   ]
+  },
+  {
+   "id": "M05",
+   "status": "accepted",
+   "evidence": [
+    "src/persian_pronunciation_tts_evaluation/schema.py",
+    "data/collection_v1/DATASHEET.md",
+    "tests/receipts/m05_manifest.json",
+    "tests/receipts/m05_m06_run.json",
+    "src/persian_pronunciation_tts_evaluation/collection.py",
+    "data/collection_v1/targets.json",
+    "tests/test_m05.py"
+   ]
+  },
+  {
+   "id": "M06",
+   "status": "accepted",
+   "evidence": [
+    "docs/RESULTS_TTS.md",
+    "docs/THIRD_PARTY.md",
+    "tools/run_moss_tts_nano.py",
+    "src/persian_pronunciation_tts_evaluation/audio_stats.py",
+    "tests/receipts/m06_tts_baseline.json",
+    "tests/receipts/m06_tts_runlog.json",
+    "tests/receipts/m06_pip_freeze.txt",
+    "tests/test_m06_m07.py"
+   ]
+  },
+  {
+   "id": "M07",
+   "status": "accepted",
+   "evidence": [
+    "docs/FAILURE_ANALYSIS.md",
+    "src/persian_pronunciation_tts_evaluation/failure.py",
+    "tests/test_m06_m07.py",
+    "tests/receipts/m07_failure.json",
+    "tests/receipts/m07_prefix_run.json",
+    "tests/receipts/m07_run.json"
+   ]
+  },
+  {
+   "id": "M08",
+   "status": "not_started",
+   "evidence": []
+  },
+  {
+   "id": "M09",
+   "status": "not_started",
+   "evidence": []
+  },
+  {
+   "id": "M10",
+   "status": "not_started",
+   "evidence": []
   }
+ ],
+ "tests": [
+  {
+   "command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+   "scope": "behavioural, synthetic/mock fixtures",
+   "receipt": "tests/receipts/review_run.json"
+  },
+  {
+   "command": "python3 common/validate_state.py handoff/STATE.json --root .",
+   "scope": "bookkeeping only"
+  }
+ ],
+ "next_actions": [
+  "Native listener rates the 12 MOSS WAVs via blind packet",
+  "Review targets.json spans",
+  "Human/independent review of M01-M07 (AI self-review done)"
+ ],
+ "budget": {
+  "observed_remaining": "week1 3% used at 11:09 Berlin (user reading)",
+  "pool_relationship": "unknown",
+  "paid_spend_allowed": false
+ },
+ "completion_fraction": 0.7,
+ "notes": "M01-M07 accepted by Bot review only (not independent). Illustration generated (assets/ASSETS.json), binary on Drive only. M06 is a signal-level real-TTS baseline; pronunciation quality not measured. M01-M07 re-checked 2026-10-25 by AI self-review (separate pass, not human): docs/REVIEW_M01_M07.md.",
+ "lease": {
+  "status": "active",
+  "released_at": null,
+  "holder": "Grok Bot",
+  "note": "Bot owns main until release report"
+ },
+ "portfolio_control_locator": {
+  "coordinator_project": "01",
+  "repo_path": "portfolio/ (in abstention-routing-harness)",
+  "drive_path": "project01 outputs/current/portfolio/"
+ }
 }
