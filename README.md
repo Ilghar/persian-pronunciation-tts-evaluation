@@ -1,41 +1,52 @@
-# Persian pronunciation and expressive TTS evaluation
+A small, reproducible evaluation of Persian pronunciation and expressive TTS, without treating subjective prosody as intelligibility.
 
-**Status: work in progress (private). 7/10 milestones; synthetic inputs; real TTS output measured at signal level only.**
+This repository is public and still in progress. Synthetic inputs are in use. Real TTS output has been measured at signal level only; there is no pronunciation quality baseline yet.
 
-- Product contract: `docs/PRODUCT_CONTRACT.md`
-- Sources/evidence vs plans: `docs/SOURCES.md`
-- Architecture/experiment plan: `docs/ARCHITECTURE.md`, ADR `docs/adr/0001-scope-and-boundaries.md`
-- Handoff: `handoff/`
+<p align="center"><a href="https://github.com/Ilghar/persian-pronunciation-tts-evaluation">Repository</a> · <a href="https://ilghar.studio">ilghar.studio</a></p>
 
-Contribution: ilghar.studio — concept, problem framing, requirements, evaluation direction. License: not yet chosen.
+## How it's used
 
-## Install (M08)
+Install (M08), offline, no dependencies:
+
 ```sh
-python3 -m pip install --no-index .   # offline, no dependencies; console script: persian-pronunciation-tts-evaluation
-sh examples/run.sh                     # install into a temp venv and check outputs against examples/expected.sha256
+python3 -m pip install --no-index .   # console script: persian-pronunciation-tts-evaluation
+sh examples/run.sh                     # temp venv; check outputs against examples/expected.sha256
 ```
-See `docs/DEPENDENCIES.md`.
 
-## Quickstart (fresh environment)
-Requires Python >= 3.11, no dependencies, no network.
+See `docs/DEPENDENCIES.md`. Quickstart in a fresh environment (Python >= 3.11, no network):
+
 ```
 git clone <this repo> && cd persian-pronunciation-tts-evaluation
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 PYTHONPATH=src python3 -m persian_pronunciation_tts_evaluation score inputs/starter_sentences.csv fixtures/mock_ratings_m03.json --out out/
 ```
-Modules: items.py, score.py, cli.py. Fixture: mock ratings for FA01-FA04 (no audio exists); verifies mock exclusion from baseline and not_evaluated accounting. Receipts: `tests/receipts/`.
 
-## Vertical slice (M04)
+The fixture uses mock ratings for FA01–FA04 (no audio exists). It checks that mocks are excluded from the baseline. Receipts: `tests/receipts/`.
+
+Vertical slice (M04):
+
 ```
 PYTHONPATH=src python3 -m persian_pronunciation_tts_evaluation slice inputs/starter_sentences.csv fixtures/mock_blind_ratings_m04.csv --out out/m04
 ```
-Cleared FA01-FA12 -> phenomenon tags -> MOCK tone WAVs (not speech) + sha256 manifest -> blind packet -> mock ratings ingest -> scorer. Mock run excluded from baseline: NO empirical TTS baseline exists.
-Review: `docs/REVIEW_M01_M03.md`.
 
-## Collection and results
-- Datasheet: `data/collection_v1/DATASHEET.md`
-- Real-TTS baseline: `docs/RESULTS_TTS.md`; third-party licenses: `docs/THIRD_PARTY.md`
-- Case page: `docs/CASE_PAGE.md`; static page: `site/index.html` (`python3 tools/export_site.py`); diagram `docs/architecture.mmd` + `docs/architecture.svg`
-- Schema validation in code: `src/persian_pronunciation_tts_evaluation/schema.py` (stdlib subset)
-- Failure analysis (M07): `docs/FAILURE_ANALYSIS.md`
-- Illustration provenance: `assets/ASSETS.json` (image on Drive, not in git)
+Mock tone WAVs are not speech and are never a baseline. No empirical TTS quality baseline exists yet.
+
+## What it checks
+
+Signal-level measures from a real MOSS-TTS-Nano CPU run are in `docs/RESULTS_TTS.md` (12/12 generations succeeded; seeded reruns were not bit-identical; FA09 clipped / was mostly silent). Those numbers are not a pronunciation or quality baseline: nobody has listened to the audio.
+
+## What still fails
+
+- Pronunciation correctness, intelligibility, and naturalness are unmeasured (no native ratings; `reference_pronunciation` is null).
+- Seeded reruns are not bit-identical, so ratings must be keyed to audio sha256.
+- The item set is small (12), and reference pronunciations are unreviewed.
+
+## How it works
+
+- Tagged source text can go through an optional credited synthesizer, then consented audio or a recorded-output manifest.
+- Blind human ratings and timing metadata are meant to feed a reproducible baseline, with limitations stated.
+- Longer notes live in `docs/` (`PRODUCT_CONTRACT.md`, `ARCHITECTURE.md`, `RESULTS_TTS.md`, `FAILURE_ANALYSIS.md`). The workflow diagram is `docs/architecture.svg`.
+
+License: not yet chosen.
+
+<sub>ilghar.studio</sub>
